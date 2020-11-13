@@ -1,0 +1,127 @@
+// Parial variables
+@import "colors";
+@import "fonts";
+@import "variables";
+
+//BLOG + WIDGET AREA
+
+.feature-image {
+  width: 100%;
+
+  .archive-description {
+    color: white;
+  }
+
+  &-default {
+    background-image: url(../assets/img/stuff-feature.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &-alt {
+      background-image: url(../assets/img/hipster-stuff.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  }
+  h1 {
+    color: #fff;
+    margin-top: 40px;
+  }
+}
+
+#primary {
+  padding-top: 40px;
+}
+
+.post {
+  background-color: white;
+  border: $main-border-styles;
+  border-radius: $main-border-radius;
+  margin-bottom: 40px;
+  text-align: left;
+
+  header {
+    padding: 20px;
+    position: relative;
+
+    h3 {
+      margin: 0 0 15px;
+      padding: 0 0 15px;
+      border-bottom: $main-border-styles;
+    }
+
+    .post-details {
+      font-size: 12px;
+      width: 85%;
+
+      i.fa {
+        padding-left: 10px;
+      }
+
+      i.fa:first-child {
+        padding-left: 0;
+      }
+    }
+
+    .post-image {
+      height: auto;
+    }
+
+    .post-comments-badge {
+      width: 70px;
+      height: 70px;
+      background-color: $main-green;
+      text-align: center;
+      border-radius: 50px;
+      position: absolute;
+      top: 32px;
+      right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: #8bc653;
+      }
+      a {
+        color: white;
+        p {
+          font-size: 20px;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .post-excerpt {
+    padding: 20px;
+  }
+}
+
+.widget {
+  background-color: white;
+  border: $main-border-styles;
+  border-radius: $main-border-radius;
+  margin-bottom: 40px;
+  padding: 20px;
+
+  h4 {
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    border-bottom: $main-border-styles;
+  }
+
+  li {
+    list-style: none;
+
+    &:hover {
+      transform: translateX(1px);
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+}
